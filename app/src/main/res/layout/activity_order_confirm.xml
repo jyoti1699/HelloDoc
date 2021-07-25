@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderConfirm"
+    android:background="@drawable/hd3"
+    android:orientation="vertical">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/btgif2"
+        />
+
+    <TextView
+        android:id="@+id/orderdetails"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_marginTop="70dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="GO TO HOME PAGE"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/gthomepage1"/>
+
+
+
+</LinearLayout>

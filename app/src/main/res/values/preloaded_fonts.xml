@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/adamina</item>
+        <item>@font/alegreya_sans_sc_medium</item>
+        <item>@font/arbutus_slab</item>
+        <item>@font/arvo</item>
+        <item>@font/baloo</item>
+        <item>@font/baloo_bhaina</item>
+        <item>@font/berkshire_swas</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/bree_serif</item>
+        <item>@font/bungee_inline</item>
+        <item>@font/calligraffitti</item>
+        <item>@font/cambay</item>
+        <item>@font/cambo</item>
+        <item>@font/enriqueta</item>
+        <item>@font/ewert</item>
+        <item>@font/galada</item>
+        <item>@font/ultra</item>
+        <item>@font/wellfleet</item>
+    </array>
+</resources>

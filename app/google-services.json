@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1020608111110",
+    "firebase_url": "https://hello-doc-9d4a2.firebaseio.com",
+    "project_id": "hello-doc-9d4a2",
+    "storage_bucket": "hello-doc-9d4a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020608111110:android:495263e4c1e1beec4e1987",
+        "android_client_info": {
+          "package_name": "com.example.hellodoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020608111110-qihqdnd1qe7j9jb3uttg685ng1ohf6g0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hellodoc",
+            "certificate_hash": "db54d8ca00a645f3473efd1f9b81b0e83e9a4471"
+          }
+        },
+        {
+          "client_id": "1020608111110-kt29ik0f8og27dg7786514058ajmaevq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsixXZF_R_Y35fSnuisVChWuExAm7vrzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020608111110-kt29ik0f8og27dg7786514058ajmaevq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

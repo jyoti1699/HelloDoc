@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".doc_list">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/ewert"
+        android:text="HELLO DOC"
+        android:textColor="#5C5B5B"
+        android:textSize="40sp" />
+
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="452dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/search"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/result"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="770dp"
+        android:layout_marginTop="10dp"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/product_recycler1"
+            android:layout_width="match_parent"
+            android:layout_height="730dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+
+            android:background="#fff" />
+
+        <ProgressBar
+            android:id="@+id/pgbar1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="192dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginEnd="188dp"
+            android:layout_marginBottom="460dp" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backbtn"
+        android:shadowColor="#E2B3B3B3"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="change city"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

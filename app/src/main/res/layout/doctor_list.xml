@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/cambo"
+            android:paddingLeft="20dp"
+            android:text="N-95 Mask (Buy 2 get 1 free)"
+            android:textColor="#000"
+            android:textSize="27sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal">
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/speciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="20dp"
+                    android:text="N-95 Mask (Buy 2 get 1 free)"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="20dp"
+                    android:text="N-95 Mask (Buy 2 get 1 free)"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="20dp"
+                    android:text="N-95 Mask (Buy 2 get 1 free)"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RatingBar
+                    android:id="@+id/drbar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:rating="4.5" />
+
+                <Button
+                    android:id="@+id/bbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="BOOK"
+                    android:onClick="books"
+                    android:background="@drawable/bookbtn"
+                    android:textColor="@color/white"
+                    ></Button>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/md"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                ></ImageView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

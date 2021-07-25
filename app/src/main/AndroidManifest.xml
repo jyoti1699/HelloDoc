@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hellodoc">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Hello Doc"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".settings"></activity>
+        <activity android:name=".EnterBookingDetails" />
+        <activity android:name=".MyBookings" />
+        <activity android:name=".MyOrders" />
+        <activity android:name=".OrderConfirm" />
+        <activity android:name=".OrderSummary" />
+        <activity android:name=".cartview" />
+        <activity android:name=".ViewProduct" />
+        <activity android:name=".cofirm_booking" />
+        <activity android:name=".appoinment" />
+        <activity android:name=".advbooking" />
+        <activity android:name=".dbooking" />
+        <activity android:name=".doc_list" />
+        <activity android:name=".product_list" />
+        <activity android:name=".booking" />
+        <activity android:name=".logged_in" />
+        <activity android:name=".passw" />
+        <activity android:name=".Verification" />
+        <activity android:name=".register" />
+        <activity android:name=".Search" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

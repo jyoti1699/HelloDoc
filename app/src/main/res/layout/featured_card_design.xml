@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210dp"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:padding="10dp"
+         android:orientation="vertical">
+
+         <ImageView
+             android:id="@+id/fimage"
+             android:layout_width="match_parent"
+             android:layout_height="140dp"
+             android:src="@drawable/proteinpwder"
+             android:scaleType="centerCrop"
+             />
+
+         <TextView
+             android:id="@+id/ftitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:fontFamily="@font/berkshire_swash"
+             android:text="JustHer Protein"
+             android:textColor="#000"
+             android:textSize="20sp" />
+
+         <RatingBar
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:rating="4.5"
+             style="@style/Widget.AppCompat.RatingBar.Small"/>
+         <TextView
+             android:id="@+id/fdes"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="7 Ayurvedic Blends, 7 clean nutrition promises, Zero Added Sugar, Preservatives Frees"/>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="69dp"
+
+             android:orientation="vertical">
+
+             <Button
+                 android:layout_width="151dp"
+                 android:layout_height="41dp"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginTop="15dp"
+                 android:background="@drawable/featured_button"
+                 android:text="Order Now"
+                 android:textColor="#ffffff" />
+         </LinearLayout>
+
+
+     </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

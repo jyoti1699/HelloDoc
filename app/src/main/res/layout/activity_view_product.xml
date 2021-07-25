@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProduct"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/productimage"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:padding="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/cambo"
+        android:id="@+id/producttitle"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dp"
+            android:text="₹300 "
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/productoldprice"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/wellfleet"
+            android:paddingLeft="10dp"
+            android:text="₹5̶0̶0̶"
+            android:textColor="#8C8A8A"
+            android:textSize="23sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RatingBar
+        android:id="@+id/productrbar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+         />
+
+    <TextView
+        android:id="@+id/productoffer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/cambay"
+        android:paddingLeft="20dp"
+        android:text="Save ₹50 by using coupons"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="ORDER"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/bookbtn"
+            android:id="@+id/productorder"></Button>
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="ADD TO CART"
+            android:layout_marginLeft="58dp"
+            android:textColor="#fff"
+            android:background="@drawable/bookbtn"
+            android:id="@+id/productaddtocart"></Button>
+
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Other Healthcare Products"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:paddingLeft="10dp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="241dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/moffer"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#000"
+            android:text="70% off"
+            android:paddingLeft="80dp"
+            android:textColor="#fff"
+            android:paddingTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/mimage"
+            android:layout_width="133dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/nnfive" />
+
+        <TextView
+            android:id="@+id/mtext"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="N-95 Mask (Buy 2 get 1 free)"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/mprice"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:fontFamily="@font/baloo"
+            android:text="₹300"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

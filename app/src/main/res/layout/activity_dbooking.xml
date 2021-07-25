@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dbooking"
+    android:orientation="vertical"
+    android:background="@drawable/hd3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/cambo"
+        android:textSize="30sp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+
+    <RatingBar
+        android:id="@+id/dbar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="5dp"
+        android:rating="4.5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t3"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:text="Please select a time slot."
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="9 AM - 10 AM"
+        android:id="@+id/b1"
+        android:background="@drawable/newbtn"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="10 AM - 11 AM"
+        android:id="@+id/b2"
+        android:background="@drawable/newbtn"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="11 AM - 12 PM"
+        android:id="@+id/b3"
+        android:background="@drawable/newbtn"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="4 PM - 5 PM"
+        android:id="@+id/b4"
+        android:background="@drawable/newbtn"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="5 PM - 6 PM"
+        android:id="@+id/b5"
+        android:background="@drawable/newbtn"
+        />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="6 PM - 7 PM"
+        android:id="@+id/b6"
+        android:background="@drawable/newbtn"
+        />
+
+    ]
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

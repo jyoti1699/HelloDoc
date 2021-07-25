@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hd3"
+    tools:context=".advbooking"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:text="Please select a date to visit."
+        android:layout_marginTop="350dp"
+        android:textColor="#000"
+        />
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ab1"
+        android:background="@drawable/newbtn"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ab2"
+        android:background="@drawable/newbtn"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ab3"
+        android:background="@drawable/newbtn"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ab4"
+        android:background="@drawable/newbtn"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ab5"
+        android:background="@drawable/newbtn"
+        />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ab6"
+        android:background="@drawable/newbtn"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

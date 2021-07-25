@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrders"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="back"
+            android:id="@+id/back1"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#E2B3B3B3"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:layout_marginLeft="3dp"
+            android:shadowRadius="5"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="HELLO DOC"
+            android:textSize="40sp"
+            android:textColor="#2589a8"
+            android:paddingLeft="60dp"
+            android:paddingRight="50dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="15dp"
+            />
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/cambay"
+        android:paddingLeft="180dp"
+        android:text="Your Orders"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/morecycler"
+        android:layout_width="match_parent"
+        android:layout_height="737dp" />
+
+    <Button
+        android:layout_width="430dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:text="go to homepage"
+        android:layout_marginLeft="25dp"
+        android:textColor="#fff"
+        android:id="@+id/gth"
+        android:background="@drawable/backbtn"
+        ></Button>
+
+</LinearLayout>
