@@ -56,6 +56,9 @@ public class MyBookings extends AppCompatActivity {
                         String paadhar = (String) next.child("paadhar").getValue();
                         String time = (String) next.child("time").getValue();
                         String date = (String) next.child("date").getValue();
+                        boolean status = (boolean) next.child("status").getValue();
+
+
 
                    /* arrayList.add("Name - "+docname+
                             "\nSpeciality - "+spec+
@@ -63,7 +66,7 @@ public class MyBookings extends AppCompatActivity {
                             "\nPhone - "+phone+
                             "\nRating - "+drbar);*/
 
-                        KLocations.add(new MBHelperClass(dname,pname,page,time,date,paadhar,pcontact));
+                        KLocations.add(new MBHelperClass(dname,pname,page,time,date,paadhar,pcontact,status));
                         padapter1 = new MBAdapter(KLocations);
                         productRecycler1.setAdapter(padapter1);
                         //arrayAdapter = new ArrayAdapter<String>(doc_list.this, android.R.layout.simple_list_item_1, arrayList);

@@ -14,10 +14,12 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -26,17 +28,25 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.HashMap;
+
 public class MainActivity extends AppCompatActivity {
 TextInputLayout email1,passwd1;
 ProgressBar pg;
+CheckBox rememberme;
+    HashMap<String,String> userCred = new HashMap<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         pg = findViewById(R.id.progressbar);
+        rememberme=findViewById(R.id.rememberme);
+
         pg.setVisibility((View.GONE));
         email1 = findViewById(R.id.email);
         passwd1 = findViewById(R.id.passwd);
+        TextInputEditText phone=findViewById(R.id.phone);
+        TextInputEditText pass=findViewById(R.id.pass);
         Button reg = (Button) findViewById(R.id.regist);
         Button skipbtn=(Button)findViewById(R.id.skip);
         Button fp=(Button)findViewById(R.id.fp);
@@ -66,7 +76,7 @@ ProgressBar pg;
             public void onClick(View v) {
                 pg.setVisibility((View.GONE));
                 Intent secondactivity1 = new Intent();
-                secondactivity1.setClass(MainActivity.this, dbooking.class);
+                secondactivity1.setClass(MainActivity.this, logged_in.class);
                 startActivity(secondactivity1);
             }
         });
@@ -138,11 +148,17 @@ ProgressBar pg;
                     if (passwordfromDB.equals(userpass)) {
                         email1.setError(null);
                         email1.setErrorEnabled(false);
-                        //String mailfromDB = snapshot.child(userphone).child("mail").getValue(String.class);
-                        //String phonefromDB = snapshot.child(userphone).child("phone").getValue(String.class);
-                        Intent secondactivity1 = new Intent();
-                        secondactivity1.setClass(MainActivity.this, logged_in.class);
-                        startActivity(secondactivity1);
+
+                            //String mailfromDB = snapshot.child(userphone).child("mail").getValue(String.class);
+                            //String phonefromDB = snapshot.child(userphone).child("phone").getValue(String.class);
+                            Intent secondactivity1 = new Intent();
+                            secondactivity1.setClass(MainActivity.this, logged_in.class);
+                        if(rememberme.isChecked()) {
+                            userCred.put(userphone,userpass);
+                        }
+                        secondactivity1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(secondactivity1);
+
 
                     } else {
                         pg.setVisibility((View.GONE));

@@ -2,6 +2,7 @@ package com.example.hellodoc;
 
 public class UserClass {
     String PName,PAge,PAadhar,dname,date,time,PContact;
+    boolean status;
 
     public UserClass() {
 
@@ -10,7 +11,7 @@ public class UserClass {
 
 
 
-    public UserClass(String PName, String PAge, String PAadhar, String dname, String date, String time, String PContact) {
+    public UserClass(String PName, String PAge, String PAadhar, String dname, String date, String time, String PContact,boolean status) {
         this.PName = PName;
         this.PAge = PAge;
         this.PAadhar = PAadhar;
@@ -18,6 +19,7 @@ public class UserClass {
         this.date = date;
         this.time = time;
         this.PContact = PContact;
+        this.status = status;
 
     }
 
@@ -63,6 +65,11 @@ public class UserClass {
         this.PContact = PContact;
     }
 
+    public boolean isStatus() {
+        return status;
+    }
 
-
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
 }

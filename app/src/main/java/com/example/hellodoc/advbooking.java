@@ -39,6 +39,9 @@ public class advbooking extends AppCompatActivity {
         final String time = getIntent().getStringExtra("time");
         final String dname = getIntent().getStringExtra("dname");
         final String city = getIntent().getStringExtra("city");
+        final String fees = getIntent().getStringExtra("fees");
+        final  String paid = getIntent().getStringExtra("not paid");
+        final boolean status = false;
         final String date1,date2,date3,date4,date5,date6;
         dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         dF = new SimpleDateFormat("dd/MM/yyyy");
@@ -68,6 +71,9 @@ public class advbooking extends AppCompatActivity {
                 secondactivity1.putExtra("d",d);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                secondactivity1.putExtra("fees",fees);
+                secondactivity1.putExtra("paid",paid);
+                secondactivity1.putExtra("status",status);
                 startActivity(secondactivity1);
             }
         });
@@ -97,6 +103,9 @@ public class advbooking extends AppCompatActivity {
                 secondactivity1.putExtra("d",d);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                secondactivity1.putExtra("fees",fees);
+                secondactivity1.putExtra("paid",paid);
+                secondactivity1.putExtra("status",status);
                 startActivity(secondactivity1);
             }
         });
@@ -126,6 +135,9 @@ public class advbooking extends AppCompatActivity {
                 secondactivity1.putExtra("d",d);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                secondactivity1.putExtra("fees",fees);
+                secondactivity1.putExtra("paid",paid);
+                secondactivity1.putExtra("status",status);
                 startActivity(secondactivity1);
             }
         });
@@ -155,6 +167,9 @@ public class advbooking extends AppCompatActivity {
                 secondactivity1.putExtra("d",d);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                secondactivity1.putExtra("fees",fees);
+                secondactivity1.putExtra("paid",paid);
+                secondactivity1.putExtra("status",status);
                 startActivity(secondactivity1);
             }
         });
@@ -184,6 +199,9 @@ public class advbooking extends AppCompatActivity {
                 secondactivity1.putExtra("d",d);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                secondactivity1.putExtra("fees",fees);
+                secondactivity1.putExtra("paid",paid);
+                secondactivity1.putExtra("status",status);
                 startActivity(secondactivity1);
             }
         });
@@ -213,6 +231,9 @@ public class advbooking extends AppCompatActivity {
                 secondactivity1.putExtra("d",d);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                secondactivity1.putExtra("fees",fees);
+                secondactivity1.putExtra("paid",paid);
+                secondactivity1.putExtra("status",status);
                 startActivity(secondactivity1);
             }
         });

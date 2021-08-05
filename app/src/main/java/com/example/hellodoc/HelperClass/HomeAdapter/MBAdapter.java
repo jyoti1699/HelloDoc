@@ -36,9 +36,18 @@ public class MBAdapter extends RecyclerView.Adapter<MBAdapter.MostViewHolder> {
     public void onBindViewHolder(@NonNull final MostViewHolder holder, int position) {
 
         final MBHelperClass dHelperClass = mostLocations.get(position);
+        String paystat = null;
+        if(dHelperClass.isStatus()==true)
+        {
+            paystat = "Paid";
+        }
+        else if(dHelperClass.isStatus()==false)
+        {
+            paystat = "Not Paid";
+        }
         holder.name.setText(" Doctor Name : "+dHelperClass.getDname());
         holder.pdetails.setText(" Pateint Name : "+dHelperClass.getPname()+"\n Pateint Age : "+dHelperClass.getAge()+"\n Contact Number : "+dHelperClass.getContact()
-        +"\n Aadhar Number : "+dHelperClass.getAadhar()+"\n Date : "+dHelperClass.getDate()+"\n Time : "+dHelperClass.getTime());
+        +"\n Aadhar Number : "+dHelperClass.getAadhar()+"\n Date : "+dHelperClass.getDate()+"\n Time : "+dHelperClass.getTime()+"\n Payment Status : "+paystat);
 
     }
 

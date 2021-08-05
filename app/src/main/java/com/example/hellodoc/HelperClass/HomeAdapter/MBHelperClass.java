@@ -57,7 +57,11 @@ public class MBHelperClass {
         this.contact = contact;
     }
 
-    public MBHelperClass(String dname, String pname, String age, String time, String date, String aadhar, String contact) {
+    public boolean isStatus() { return status; }
+
+    public void setStatus(boolean status) { this.status = status; }
+
+    public MBHelperClass(String dname, String pname, String age, String time, String date, String aadhar, String contact, boolean status) {
         this.dname = dname;
         this.pname = pname;
         this.age = age;
@@ -65,7 +69,9 @@ public class MBHelperClass {
         this.date = date;
         this.aadhar = aadhar;
         this.contact = contact;
+        this.status = status;
     }
 
     String dname,pname,age,time,date,aadhar,contact;
+    boolean status;
 }

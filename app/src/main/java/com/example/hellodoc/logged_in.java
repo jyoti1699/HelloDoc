@@ -31,9 +31,12 @@ import com.example.hellodoc.HelperClass.HomeAdapter.FeatureHelperClass;
 import com.example.hellodoc.HelperClass.HomeAdapter.MostAdapter;
 import com.example.hellodoc.HelperClass.HomeAdapter.MostHelperClass;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 
 import java.util.ArrayList;
+
+import static android.os.SystemClock.sleep;
 
 public class logged_in extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     RecyclerView featuredRecycler,mRecycler;
@@ -301,6 +304,18 @@ public class logged_in extends AppCompatActivity implements NavigationView.OnNav
                 startActivity(secondactivity4);
 
                 break;
+
+            case R.id.nav_signout:
+                FirebaseAuth.getInstance().signOut();
+                Intent secondactivity5 = new Intent();
+                secondactivity5.setClass(logged_in.this, MainActivity.class);
+                secondactivity5.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                Toast.makeText(logged_in.this,"Sign Out Successfully",Toast.LENGTH_LONG).show();
+                startActivity(secondactivity5);
+                break;
+
+
 
 
         }

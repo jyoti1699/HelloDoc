@@ -30,6 +30,7 @@ public class dbooking extends AppCompatActivity {
                 "\n Address : "+getIntent().getStringExtra("addr")+
                 "\n Phone : "+getIntent().getStringExtra("phone")+
                 "\n Fee : "+getIntent().getStringExtra("fees"));
+
         float r = getIntent().getFloatExtra("drbar",4);
         RatingBar rb = findViewById(R.id.dbar);
         rb.setRating(r);
@@ -53,6 +54,8 @@ public class dbooking extends AppCompatActivity {
                 secondactivity1.putExtra("time",time);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                String fees = getIntent().getStringExtra("fees");
+                secondactivity1.putExtra("fees",fees);
                 startActivity(secondactivity1);
             }
 
@@ -69,6 +72,8 @@ public class dbooking extends AppCompatActivity {
                 secondactivity1.putExtra("time",time);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                String fees = getIntent().getStringExtra("fees");
+                secondactivity1.putExtra("fees",fees);
                 startActivity(secondactivity1);
             }
 
@@ -84,6 +89,8 @@ public class dbooking extends AppCompatActivity {
                 secondactivity1.putExtra("time",time);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                String fees = getIntent().getStringExtra("fees");
+                secondactivity1.putExtra("fees",fees);
                 startActivity(secondactivity1);
             }
 
@@ -100,6 +107,8 @@ public class dbooking extends AppCompatActivity {
                 secondactivity1.putExtra("time",time);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                String fees = getIntent().getStringExtra("fees");
+                secondactivity1.putExtra("fees",fees);
                 startActivity(secondactivity1);
             }
 
@@ -116,6 +125,8 @@ public class dbooking extends AppCompatActivity {
                 secondactivity1.putExtra("time",time);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                String fees = getIntent().getStringExtra("fees");
+                secondactivity1.putExtra("fees",fees);
                 startActivity(secondactivity1);
             }
 
@@ -132,6 +143,8 @@ public class dbooking extends AppCompatActivity {
                 secondactivity1.putExtra("time",time);
                 secondactivity1.putExtra("dname",dname);
                 secondactivity1.putExtra("city",city);
+                String fees = getIntent().getStringExtra("fees");
+                secondactivity1.putExtra("fees",fees);
                 startActivity(secondactivity1);
             }
 

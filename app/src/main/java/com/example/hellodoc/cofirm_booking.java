@@ -19,6 +19,7 @@ public class cofirm_booking extends AppCompatActivity {
 
     Button gthomepage,makeanotherappnt;
     TextView bookingdetails;
+    String p;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +57,11 @@ public class cofirm_booking extends AppCompatActivity {
         final String PAge = getIntent().getStringExtra("PAge");
         final String PAadhar = getIntent().getStringExtra("PAadhar");
         final String PContact = getIntent().getStringExtra("PContact");
+        final boolean status = getIntent().getBooleanExtra("status",true);
+      /*  if(stat==true)
+        {
+            p = "Paid";
+        }*/
         /*bookingdetails.setText("  NAME : "+PName
                                +"\n  AGE : "+PAge
                                +"\n  AADHAR NUMBER : "+PAadhar
@@ -87,6 +93,18 @@ public class cofirm_booking extends AppCompatActivity {
         Spannable wordEight = new SpannableString("\n\n"+PName+"\nAge : "+PAge+"\nAadhar Number : "+PAadhar+"\nContact No. : "+PContact);
         wordEight.setSpan(new ForegroundColorSpan(Color.BLACK), 0, wordEight.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         bookingdetails.append(wordEight);
+        if(status==true)
+        {
+            Spannable wordNine = new SpannableString("\n\n"+"Amount : Paid");
+            wordNine.setSpan(new ForegroundColorSpan(Color.BLACK), 0, wordNine.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            bookingdetails.append(wordNine);
+        }
+        else if(status==false)
+        {
+            Spannable wordNine = new SpannableString("\n\n"+"Amount : Not Paid");
+            wordNine.setSpan(new ForegroundColorSpan(Color.BLACK), 0, wordNine.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            bookingdetails.append(wordNine);
+        }
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.doorbell);
         mediaPlayer.start();
 

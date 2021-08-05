@@ -78,18 +78,47 @@
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/paymentstatus"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="Amount"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
 
 
         <Button
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Book an appointment"
+            android:text="Book my appointment"
             android:background="@drawable/bookbtn"
             android:textColor="#fff"
             android:id="@+id/bapnt"
+            />
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay now"
+            android:background="@drawable/bookbtn"
+            android:textColor="#fff"
+            android:id="@+id/paynow"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or Pay Later"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
             />
 
     </LinearLayout>
