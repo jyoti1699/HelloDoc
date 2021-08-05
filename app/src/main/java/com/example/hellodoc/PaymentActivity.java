@@ -62,13 +62,14 @@ public class PaymentActivity extends AppCompatActivity implements PaymentResultL
             options.put("theme.color", "#3399cc");
             options.put("currency", "INR");
             options.put("amount", finalAmount+"");//300 X 100
-            options.put("prefill.email", "kanha.x@example.com");
+            options.put("prefill.email", "kanha.x@ex.com");
             options.put("prefill.contact","8279766744");
 
             checkout.open(activity, options);
 
         } catch(Exception e) {
             Log.e("TAG", "Error in starting Razorpay Checkout", e);
+            Toast.makeText(PaymentActivity.this,"Error in starting Razorpay Checkout",Toast.LENGTH_LONG);
         }
     }
     @Override
